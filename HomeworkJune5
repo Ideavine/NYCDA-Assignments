@@ -1,0 +1,63 @@
+#1a:
+puts "A pizza can get to your house faster than an ambulance..." + "Only in America!"
+
+#1b:
+puts [5, 55, 99, 100].max
+
+=begin
+1c:
+I am trying to combine cities with the corresponding country using the .merge. I also tried .join and .each. No luck.
+Cities = {"Rio", "Accra", "Joburg", "Moscow"}
+Countries = {":Brazil", ":Ghana", ":SouthAfrica:", ":Russia"}
+Cities.merge(Countries)
+end
+=end
+
+#2:
+1.upto(100) do |i|
+     if i % 5 == 0 and i % 3 == 0
+        puts "FizzBuzz"
+      elsif i % 5 == 0
+        puts "Buzz"
+      elsif i % 3 == 0
+        puts "Fizz"
+      else
+        puts i
+      end
+    end
+
+
+=begin
+HOMEWORK
+1. Create the following functions:
+a.Create a function that takes a string and adds the phrase “Only in America!” to the end of it
+b.Create a function to find the maximum value in an array of numbers. 
+For instance:[100,10,-1000]should return 100.
+c.Create a function that takes two arguments - both of them arrays. 
+Inside of the function, combine the arrays using the items from the first array as keys and the second array as 
+values. 
+For example, when these two arrays are supplied as arguments:[:toyota, :tesla][“Prius”, “Model S”]
+they should return a hash like so:{toyota: “Prius”, tesla: “Model S”}
+2.Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the 
+number and for multiples of five print “Buzz”. Print “FizzBuzz” for numbers that are multiples of both 3 and 5.
+Recommended Activity 
+Complete as much of the “Introduction to Ruby” track on Codecademy as you can.
+http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq?curriculum_id=5059f8619189a5000201fbcb
+Try the “Ruby in 20 minutes” primer:http://www.ruby-lang.org/en/documentation/quickstart/
+Check out Code Quizzes and the Ruby 1 and 2 quizzes:http://www.codequizzes.com/topics/24/quizzes/75http://www.codequizzes.com/topics/24/quizzes/75
+=end
+
+
+
+
+
+
+	
+
+
+
+
+
+		
+
+
