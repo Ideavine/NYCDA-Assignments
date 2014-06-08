@@ -1,0 +1,73 @@
+A class describes the type of object
+Superclass descirbes the next level of the object and beyond until it is defined as a basic object. A basic object has no class.
+What is the class of num1? It’s a string, so return String.
+What is the superclass of String? String is a child class of Object, so return Object.
+What is the superclass of Object? Object is a child class of BasicObject, so return BasicObject.
+What is the superclass of BasicObject? BasicObject is not a child class of anything, so return nil.
+
+> num1 = "this­ is a strin­g"
+=> "this is a string"
+> num1.class
+=> String
+> num1.class­.superclas­s
+=> Object
+> num1.class.superclas­s.supercla­ss
+=> BasicObject
+> num1.class­.superclas­s.superclass.supercl­ass
+=> nil
+
+
+A method tells the object how to behave
+
+irb(main):001:0> string1="ruby is awesome"
+=> "ruby is awesome"
+irb(main):002:0> string1.capitalize
+=> "Ruby is awesome"
+irb(main):003:0> string1.upcase
+=> "RUBY IS AWESOME"
+irb(main):004:0> 
+
+
+So, if you think of baking, a class is like a recipe (which contains a list of ingredients 
+and instructions for creating something). But once you create something — say, blueberry muffins — 
+then each muffin may be considered an “instance” of that class.
+So, each instance or muffin is an object.
+The way to create an instance is like this:
+
+muffin = BlueberryMuffin.new
+
+Variables
+Say you wanted to create a program (or a part of a program) that is responsible for adding two numbers. 
+From the coder’s point of view, you would need to set up a container for each of those numbers, and then set up 
+the mathematical function between the containers. The reason to do this is because you don’t want the user to have 
+to edit the source code every single time they want to calculate the sum. Although you could do that, the solution 
+is neither practical nor efficient. Most users know what a calculator looks like, so they can just press the buttons 
+or enter the numbers. But editing source code is a no-no.
+In Ruby, each of those containers is a variable. So, you would do something like this:
+
+
+sum = num1 + num2
+As opposed to something like this:
+sum = 19 + 20
+
+Local
+sum = num1 + num2
+Local variable names should start with a lowercase letter or an underscore.
+Global
+$radius = 20
+Global variable names should start with a $.
+Constants
+PI = 3.14
+Constants should start with an uppercase letter, but they are commonly written in full caps.
+Class
+@@length = 10 #
+This denotes the length of a side of an object in a class. 
+I’ve used an imaginary class, called Square, and defined the length of each side for demonstration purposes. 
+What’s important to note here is that all “squares” would have a “length” of 10 by default.
+Instance
+@length = 5 #
+This denotes the length of a side of a particular object. Suppose you wanted to create a red square that had a length of 5 instead of the default 10. You could use this instance variable to specify the length of this particular square, your “Red Square.”
+
+
+If a number is in single quotes, it becomes a fixed number or Fixnum
+
