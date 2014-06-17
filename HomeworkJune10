@@ -1,0 +1,53 @@
+=begin
+Create a program to analyze a large block of text and report back on the frequency of each word in the text.
+a.Start by sorting the text into a hash where each word is a key with the word’s value being the amount of 
+times it has been used in the block:{the: 10, john: 1, of: 15}b.Once you’ve created this hash, return the word 
+that has been used the mostc.When you’re done, encapsulate your script inside of a method that can analyze any 
+block of text fed to it
+=end
+
+text = <<BACON
+Bacon ipsum dolor sit amet short loin frankfurter pork loin, short ribs kevin pork belly shank. Brisket sirloin pork loin, venison salami tenderloin porchetta. Jowl kielbasa fatback venison beef shankle. Ham hock brisket tenderloin tongue, short ribs ground round turkey doner porchetta pork shoulder. Fatback kevin prosciutto short loin. Corned beef tongue drumstick shoulder prosciutto pork chop sausage shank. Brisket corned beef pig cow, hamburger biltong tongue pancetta pastrami shoulder ribeye sausage filet mignon.
+BACON
+
+#anayzes text
+text_hash={}
+text.split.each do |word|
+	word=word.gsub("," "")
+#gsub removes whatever falls in between first quotes and replaces it with whatever falls between second quotes, in this case nothing - so removes all commas from text
+	if text_hash.has_key?(word)
+		text_hash[word] += 1
+	else
+		text_hash[word]=1
+	end
+end
+
+#p text_hash.inspect 
+
+
+
+=begin
+#Homework first try....
+
+#I'm not sure if this is the right way to call an external file? 
+def word.frequency
+	wf=word.frequency
+	text=file.Open
+	file.Open=("MobyDick.txt").read
+#creating a new hash
+Hash={}
+#defining which words I want to count?
+def keys
+	word.keys=["x", "y", "z"]
+def values
+	word.values=["the", "Moby", "Ahab"]
+#commented this out since I got so many syntax errors on it:	word = [­"x" => "the", "y" => "Moby", "z" => "Ahab"]
+#no idea if this is close?
+word.each do { |word| wf[word] += 1 }
+puts wf.max { |word.keys, word.values|  }
+	
+end
+	
+end
+	
+=end
